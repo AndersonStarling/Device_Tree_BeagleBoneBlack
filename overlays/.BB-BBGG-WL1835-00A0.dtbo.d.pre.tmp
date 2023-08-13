@@ -1,0 +1,5 @@
+BB-BBGG-WL1835-00A0.o: arch/arm/boot/dts/overlays/BB-BBGG-WL1835-00A0.dts \
+ scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h \
+ scripts/dtc/include-prefixes/dt-bindings/pinctrl/am33xx.h \
+ scripts/dtc/include-prefixes/dt-bindings/pinctrl/omap.h \
+ scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/irq.h

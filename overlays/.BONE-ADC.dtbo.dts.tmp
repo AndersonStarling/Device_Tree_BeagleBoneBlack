@@ -1,0 +1,24 @@
+# 1 "arch/arm/boot/dts/overlays/BONE-ADC.dts"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "arch/arm/boot/dts/overlays/BONE-ADC.dts"
+# 10 "arch/arm/boot/dts/overlays/BONE-ADC.dts"
+/dts-v1/;
+/plugin/;
+
+
+
+
+&{/chosen} {
+ overlays {
+  BONE-ADC.kernel = "Sun May 28 08:28:00 2023";
+ };
+};
+
+
+
+
+
+&bone_adc {
+ status = "okay";
+};

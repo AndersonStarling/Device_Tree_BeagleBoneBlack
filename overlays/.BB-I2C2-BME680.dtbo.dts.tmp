@@ -1,0 +1,35 @@
+# 1 "arch/arm/boot/dts/overlays/BB-I2C2-BME680.dts"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "arch/arm/boot/dts/overlays/BB-I2C2-BME680.dts"
+
+
+
+
+
+/dts-v1/;
+/plugin/;
+
+
+
+
+&{/chosen} {
+ overlays {
+  BB-I2C2-BME680.kernel = "Sun May 28 08:28:00 2023";
+ };
+};
+
+&i2c2 {
+ status = "okay";
+
+ clock-frequency = <100000>;
+
+ #address-cells = <1>;
+ #size-cells = <0>;
+
+ bme680@76 {
+  status = "okay";
+  compatible = "bosch,bme680";
+  reg = <0x76>;
+ };
+};

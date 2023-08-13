@@ -1,0 +1,31 @@
+# 1 "arch/arm/boot/dts/overlays/BBORG_FAN-A000.dts"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "arch/arm/boot/dts/overlays/BBORG_FAN-A000.dts"
+
+
+
+
+
+/dts-v1/;
+/plugin/;
+
+
+
+
+&{/chosen} {
+ overlays {
+  BBORG_FAN-A000.kernel = "Sun May 28 08:28:00 2023";
+ };
+};
+
+
+&cpu0_opp_table {
+ opp_slow-500000000 {
+  opp-hz = /bits/ 64 <1000000000>;
+  opp-microvolt = <1060000 850000 1150000>,
+    <1060000 850000 1150000>;
+  opp-supported-hw = <0xFF 0x01>;
+  opp-suspend;
+ };
+};

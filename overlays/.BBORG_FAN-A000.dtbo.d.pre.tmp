@@ -1,0 +1,1 @@
+BBORG_FAN-A000.o: arch/arm/boot/dts/overlays/BBORG_FAN-A000.dts

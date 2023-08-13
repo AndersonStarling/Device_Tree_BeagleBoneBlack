@@ -1,0 +1,55 @@
+# 1 "arch/arm/boot/dts/overlays/BB-W1-P9.12-00A0.dts"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "arch/arm/boot/dts/overlays/BB-W1-P9.12-00A0.dts"
+
+
+
+
+
+
+/dts-v1/;
+/plugin/;
+
+# 1 "./scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h" 1
+# 11 "arch/arm/boot/dts/overlays/BB-W1-P9.12-00A0.dts" 2
+# 1 "./scripts/dtc/include-prefixes/dt-bindings/pinctrl/am33xx.h" 1
+# 9 "./scripts/dtc/include-prefixes/dt-bindings/pinctrl/am33xx.h"
+# 1 "./scripts/dtc/include-prefixes/dt-bindings/pinctrl/omap.h" 1
+# 10 "./scripts/dtc/include-prefixes/dt-bindings/pinctrl/am33xx.h" 2
+# 12 "arch/arm/boot/dts/overlays/BB-W1-P9.12-00A0.dts" 2
+
+
+
+
+&{/chosen} {
+ overlays {
+  BB-W1-P9.12-00A0.kernel = "Sun May 28 08:28:00 2023";
+ };
+};
+
+
+
+
+&ocp {
+ P9_12_pinmux { status = "disabled"; };
+};
+
+&am33xx_pinmux {
+ bb_dallas_w1_pins: pinmux_bb_dallas_w1_pins {
+  pinctrl-single,pins = <
+   ((((0x878)) & 0xffff) - (0x0800)) ((((1 << 5) | (1 << 4))) | (7))
+  >;
+ };
+};
+
+&{/} {
+ onewire {
+  status = "okay";
+  pinctrl-names = "default";
+  pinctrl-0 = <&bb_dallas_w1_pins>;
+
+  compatible = "w1-gpio";
+  gpios = <&gpio1 28 0>;
+ };
+};

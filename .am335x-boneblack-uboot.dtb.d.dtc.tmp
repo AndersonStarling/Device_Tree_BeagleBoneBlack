@@ -1,0 +1,1 @@
+arch/arm/boot/dts/am335x-boneblack-uboot.dtb: arch/arm/boot/dts/.am335x-boneblack-uboot.dtb.dts.tmp arch/arm/boot/dts/tps65217.dtsi

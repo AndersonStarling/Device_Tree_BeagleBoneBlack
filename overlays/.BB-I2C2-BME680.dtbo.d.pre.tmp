@@ -1,0 +1,1 @@
+BB-I2C2-BME680.o: arch/arm/boot/dts/overlays/BB-I2C2-BME680.dts

@@ -1,0 +1,34 @@
+# 1 "arch/arm/boot/dts/overlays/M-BB-BBGG-00A0.dts"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "arch/arm/boot/dts/overlays/M-BB-BBGG-00A0.dts"
+
+
+
+
+
+/dts-v1/;
+/plugin/;
+
+# 1 "./scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h" 1
+# 10 "arch/arm/boot/dts/overlays/M-BB-BBGG-00A0.dts" 2
+# 1 "./scripts/dtc/include-prefixes/dt-bindings/pinctrl/am33xx.h" 1
+# 9 "./scripts/dtc/include-prefixes/dt-bindings/pinctrl/am33xx.h"
+# 1 "./scripts/dtc/include-prefixes/dt-bindings/pinctrl/omap.h" 1
+# 10 "./scripts/dtc/include-prefixes/dt-bindings/pinctrl/am33xx.h" 2
+# 11 "arch/arm/boot/dts/overlays/M-BB-BBGG-00A0.dts" 2
+# 1 "./scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/irq.h" 1
+# 12 "arch/arm/boot/dts/overlays/M-BB-BBGG-00A0.dts" 2
+
+
+
+
+&{/chosen} {
+ overlays {
+  M-BB-BBGG-00A0.kernel = "Sun May 28 08:28:00 2023";
+ };
+};
+
+&{/} {
+ model = "SeeedStudio BeagleBone Green Gateway";
+};
